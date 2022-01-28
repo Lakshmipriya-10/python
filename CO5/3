@@ -1,0 +1,10 @@
+import csv
+with open("demo.csv","w",newline='')as file:
+    write=csv.writer(file)
+    write.writerow(["SLNo","Movie","Rating"])
+    write.writerow(["1","Avengers","5"])
+    write.writerow(["2","Avatar","4"])
+with open("demo.csv") as cvsfile:
+    data=csv.reader(cvsfile)
+    for r in data:
+        print(r)

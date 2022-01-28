@@ -1,0 +1,23 @@
+class Rectangle():
+    def __init__ (self,len,bre):
+        self.len=len
+        self.bre=bre
+    def area(self):
+        return(self.len*self.bre)
+    def peri(self):
+        return(2*(self.len+self.bre))
+r1=Rectangle(2,4)
+r2=Rectangle(5,7)
+a1=r1.area()
+a2=r2.area()
+p1=r1.peri()
+p2 = r2.peri()
+print("The area of rectangle 1 :",a1)
+print("The perimeter of rectangle 1 :", p1)
+print("The area of rectangle 2 :", a2)
+print("The perimeter of rectangle 2 :", p2)
+if(a1>a2):
+    print("Rectangle 1 is bigger")
+else:
+    print("Rectangle 2 is bigger")
+

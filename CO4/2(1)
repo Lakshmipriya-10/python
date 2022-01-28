@@ -1,0 +1,22 @@
+class bank:
+    def __init__(self,accno,name,type,bal):
+        self.accno=accno
+        self.name=name
+        self.type=type
+        self.bal=bal
+    def dep(self,amt):
+        self.bal=self.bal+amt
+        return self.bal
+    def withdraw(self,amt):
+        if amt>self.bal:
+            print("The balance is not sufficient")
+            return self.bal
+        else:
+            self.bal=self.bal-amt
+            print("The amount has been withdrawn successfully")
+            return self.bal
+b=bank(1001,"Madhu","Savings",100000)
+damt=float(input("Enter the money to be deposited"))
+print("Acc.Baalance = ",b.dep(damt))
+wamt=float(input("Enter the money to be withdrawn"))
+print("Acc.Baalance = ",b.withdraw(wamt))

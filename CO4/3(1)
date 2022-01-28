@@ -1,0 +1,19 @@
+class Rectangle:
+    def __init__(self,length,width):
+        self.len=length
+        self.wid=width
+    def area(self):
+        return self.len*self.wid
+    def com(self,other):
+        return self.area()>other.area()
+    l1=int(input("Enter the length of first rectangle"))
+    w1 = int(input("Enter the width of first rectangle"))
+    r1=(l1,w1)
+    l2 = int(input("Enter the length of second rectangle"))
+    w2 = int(input("Enter the width of second rectangle"))
+    r2=(l2,w2)
+    if r1<r2:
+        print("Area of rectangle1 is smaller")
+    else:
+        print("Area of rectangle2 is smaller")
+
